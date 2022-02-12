@@ -25,3 +25,10 @@ For using IntelliJ IDE:
     * Add we custom Checkstyle File located on: papers-with-code\backend\papers-with-code\src\main\resources\checkstyle
     * Put it as active file (and unique).
 1. After the Build Success, run the application. This will run the app inside Spring Boot's embedded Tomcat server. By default the URL is: 'localhost:8080'.
+
+
+**Database**
+
+build execution gradle INTELLIJ
+create db schema named: crypto_history
+set application properties
