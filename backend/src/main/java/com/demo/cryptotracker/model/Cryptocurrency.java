@@ -1,5 +1,10 @@
 package com.demo.cryptotracker.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Cryptocurrency {
     private String id;
     private String symbol;
