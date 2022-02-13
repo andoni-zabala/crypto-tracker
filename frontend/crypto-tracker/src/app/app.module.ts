@@ -9,12 +9,14 @@ import { CryptocurrencyService } from './services/cryptocurrency.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ export class Cryptocurrency {
     image: string;
     programmingLanguageImplementation: string;
     releaseYear: number;
+    
 
     constructor(id: number, symbol: string, name: string, hashingAlgorithm: string, categories: string, description: string, links: string,
                 image: string, programmingLanguageImplementation: string, releaseYear: number) {

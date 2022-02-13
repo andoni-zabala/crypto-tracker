@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CryptocurrencyService } from 'src/app/services/cryptocurrency.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class AdminComponent implements OnInit {
 
   cryptocurrencies: any;
 
-  constructor(private cryptocurrencyService: CryptocurrencyService) { }
+  constructor(private router: Router, private cryptocurrencyService: CryptocurrencyService) { }
 
   ngOnInit(): void {
     this.getCryptocurrencies();
@@ -22,6 +23,10 @@ export class AdminComponent implements OnInit {
       error: err => console.error(err),
       complete: () => console.log('Complete notification'),
     });
+  }
+
+  redirecToDetails(id: number) {
+    this.router.navigate(['/admin/view/' + id]);
   }
 
 }

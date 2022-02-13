@@ -1,19 +1,19 @@
 <div class="container">
-    <table class="table table-bordered table-inverse">
+    <table class="table table-bordered table-inverse table-hover">
       <tr>
         <th>Symbol</th>
         <th>Name</th>
-        <th>hashingAlgorithm</th>
-        <th>categories</th>
-        <th>description</th>
-        <th>links</th>
-        <th>image</th>
-        <th>programmingLanguageImplementation</th>
-        <th>releaseYear</th>
+        <th>Hashing Algorithm</th>
+        <th>Categories</th>
+        <th>Description</th>
+        <th>Links</th>
+        <th>Image</th>
+        <th>Programming Language  Implementation</th>
+        <th>ReleaseYear</th>
       </tr>
-      <tr *ngFor="let cryptocurrency of cryptocurrencies">
-        <td>
-          {{cryptocurrency.symbol}}
+      <tr *ngFor="let cryptocurrency of cryptocurrencies" (click)="redirecToDetails(cryptocurrency.id)" >
+        <td >
+          {{cryptocurrency.symbol}} 
         </td>
         <td>
           {{cryptocurrency.name}}
